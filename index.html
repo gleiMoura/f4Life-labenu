@@ -60,12 +60,12 @@
             <div class="pagina-dois-secoes">
                 <section>
                     <h2>Espaços individualizados ou em grupo</h2>
-                    <p>Aqui você pode optar por um quarto individualizado; ou em grupo, para conseguir juntar aquela grana extra!</p>
+                    <p>Aqui você pode optar por um quarto individualizado; ou em grupo para conseguir juntar aquela grana extra!</p>
                     <img src = 'assets/quartos.jpg' alt = "quartos">
                 </section>
                 <section>
                     <h2>As repúblicas ficam perto da sua Universidade e dos pontos de locomoção.</h2>     
-                    <p>Assimm você tem facilidade de se locomover pela cidade.</p>
+                    <p>Assim você tem facilidade de se locomover pela cidade.</p>
                     <img src = "assets/transportes.jpg" alt = "transporte">
                 </section>
                 <section>
@@ -103,12 +103,12 @@
 
             <form>
                 <label for = "email"> Email </label>
-                <input type="email" id="email" class="email" name = "email" placeholder="ex:fulano@email.com" required>
+                <input type="text" id="email" class="email" placeholder="ex:fulano@email.com" required>
 
                 <label for="mensagem">Mensagem</label>
-                <textarea class="mensagem" name="mensagem" placeholder="coloque aqui a sua mensagem"></textarea>
+                <textarea class="mensagem" name="mensagem" placeholder="coloque aqui a sua mensagem" required></textarea>
 
-                <input type="submit" id="envio" class="envio" name="envio">
+                <button class="envio" name="envio" onclick="enviarFormulario()">Enviar</button>
             </form>
         </div>
     </main>

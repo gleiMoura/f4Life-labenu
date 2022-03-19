@@ -145,6 +145,9 @@ header img{
 .pagina-dois,.pagina-quatro{
     background-color: rgba(0, 0, 139, 0.796)
 }
+.pagina-tres{
+    height: auto;
+}
 .pagina-tres-secoes{
     display: flex;
     justify-content: space-between;
@@ -198,6 +201,9 @@ iframe{
     justify-content: space-around;
     align-items: center;
 }
+.pagina-quatro h1,p{
+    margin-bottom: 10px;
+}
 .pagina-quatro form{
     width:50%;
     height: 400px;
@@ -230,6 +236,12 @@ form label{
     margin-bottom: 20px;
 }
 .envio{
+    width: 70%;
+    height: 40px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--azulEscuro);
     background-color: var(--azulEscuro);
     color: white;
     border-radius: 5px;
