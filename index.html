@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700&family=Mochiy+Pop+P+One&family=Open+Sans:wght@300;400;700&family=Recursive:wght@400;700&family=Righteous&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt='logo da empresa' />
+        <ion-icon name="apps-outline" class="menu-lateral-icone" onclick="mostrarBarra('icone')"></ion-icon>
+        <nav>
+            <div class = 'link'>
+                <a href="#pagina-um">Quem Somos<a/>
+            </div>
+
+            <div class = 'link segundo-link'>
+                <a href="#pagina-dois">Motivos<a/>
+            </div>
+
+            <div class = 'link terceiro-link'>
+                <a href="#pagina-tres">Locais<a/>
+            </div>
+
+            <div class = 'link'>
+                <a href="#pagina-quatro">Fale Conosco<a/>
+            </div>
+        </nav>
+    </header>
+    <div class="menu-lateral escondido" onclick="mostrarBarra('menu')">
+        <nav>
+                <a href="#pagina-um"><p>Quem Somos</p><a/>
+                <a href="#pagina-dois"><p>Motivos</p><a/>
+                <a href="#pagina-tres"><p>Locais</p><a/>
+                <a href="#pagina-quatro"><p>Fale Conosco</p><a/>
+        </nav>
+    </div>
+    <main>
+        <div class="pagina pagina-um" id="pagina-um">
+            <img src="assets/universitarios.jpg" src="universitários conversando">
+            <article>
+                <h1>Quem Somos</h1>
+                <p>F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias.<br><br>
+                    Estamos preparados para te proporcionar todo o conforto necessário para que seja possível você focar na sua faculdade.<br><br>
+                    Esqueça todo aquele estresse de ter que gastar horas com mudança e burocracia; nossa empresa é especializada em optimizar o seu tempo na graduação.<br><br> Realizamos reformas e preparamos moradias para a sua recepção em um ambiente específico e otimizado para a vida de graduação.<br><br>
+                    
+                    <em>Preparado para essa nova experiência?</em>
+                </p>
+            </article>
+        </div>
+        <div class = "pagina pagina-dois" id="pagina-dois">
+            <h1>Por que alugar com a F4life?</h1>
+
+            <div class="pagina-dois-secoes">
+                <section>
+                    <h2>Espaços individualizados ou em grupo</h2>
+                    <p>Aqui você pode optar por um quarto individualizado; ou em grupo, para conseguir juntar aquela grana extra!</p>
+                    <img src = 'assets/quartos.jpg' alt = "quartos">
+                </section>
+                <section>
+                    <h2>As repúblicas ficam perto da sua Universidade e dos pontos de locomoção.</h2>     
+                    <p>Assimm você tem facilidade de se locomover pela cidade.</p>
+                    <img src = "assets/transportes.jpg" alt = "transporte">
+                </section>
+                <section>
+                    <h2>Ambientes customizados</h2>
+                    <p>Aqui você encontrará uma sala de estudos, para que seja possível você focar naqueles períodos de provas. Também temos um espaço de convivência para você interagir com seus amigos.</p>
+                    <img src = "assets/espacos.jpg" alt = "sala de estudos">
+                </section>
+            </div>
+        </div>
+        <div class="pagina pagina-tres" id="pagina-tres">
+            <h1>Onde você mora?</h1>
+            <h2>Veja onde ficam nossas Repúblicas!</h2>
+            <div class="pagina-tres-secoes">
+                <section>
+                    <div class="cidade-rj" onclick = "selecionarCidade('riodejaneiro')">
+                        <h1>Rio de Janeiro</h1>
+                    </div>
+                    <div class="resposta-rj escondido">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d58767.0006103235!2d-43.26874192876282!3d-22.989324254466595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srep%C3%BAblicas%20para%20universit%C3%A1rios%20rio%20de%20janeiro%20!5e0!3m2!1spt-BR!2sbr!4v1647705432325!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </section>
+                <section>
+                    <div class="cidade-sp" onclick = "selecionarCidade('saopaulo')">
+                        <h1>São Paulo</h1>
+                    </div>
+                    <div class="resposta-sp escondido">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d116995.93884189789!2d-46.72741080193694!3d-23.59991813308982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srep%C3%BAblicas%20para%20universit%C3%A1rios%20s%C3%A3o%20paulo%20!5e0!3m2!1spt-BR!2sbr!4v1647705793931!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="pagina pagina-quatro" id="pagina-quatro">
+            <h1>Fale Conosco</h1>
+            <p>Estamos abertos para receber qualquer tipo de dúvida.</p>
+
+            <form>
+                <label for = "email"> Email </label>
+                <input type="email" id="email" class="email" name = "email" placeholder="ex:fulano@email.com" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea class="mensagem" name="mensagem" placeholder="coloque aqui a sua mensagem"></textarea>
+
+                <input type="submit" id="envio" class="envio" name="envio">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2022 Todos os direitos reservados, F4life<br>
+        <div class="redes">
+            <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://www.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+        
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="arquivo.js"></script>
+</body>
+</html>
