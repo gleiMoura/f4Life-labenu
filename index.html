@@ -16,29 +16,19 @@
         <img src="assets/logo.png" alt='logo da empresa' />
         <ion-icon name="apps-outline" class="menu-lateral-icone" onclick="mostrarBarra('icone')"></ion-icon>
         <nav>
-            <div class = 'link'>
-                <a href="#pagina-um">Quem Somos<a/>
-            </div>
-
-            <div class = 'link segundo-link'>
-                <a href="#pagina-dois">Motivos<a/>
-            </div>
-
-            <div class = 'link terceiro-link'>
-                <a href="#pagina-tres">Locais<a/>
-            </div>
-
-            <div class = 'link'>
-                <a href="#pagina-quatro">Fale Conosco<a/>
-            </div>
+            <a href="#pagina-um" class = 'link' >Quem Somos<a/>
+            <a href="#pagina-dois" class = 'link'>Serviços<a/>
+            <a href="#pagina-tres" class = 'link'>Locais<a/>
+            <a href="#pagina-quatro" class = 'link'>Fale Conosco<a/>
         </nav>
     </header>
     <div class="menu-lateral escondido" onclick="mostrarBarra('menu')">
         <nav>
                 <a href="#pagina-um"><p>Quem Somos</p><a/>
-                <a href="#pagina-dois"><p>Motivos</p><a/>
+                <a href="#pagina-dois"><p>Serviços</p><a/>
                 <a href="#pagina-tres"><p>Locais</p><a/>
                 <a href="#pagina-quatro"><p>Fale Conosco</p><a/>
+                <a href = "#footer"><p>Redes Sociais</p></a>
         </nav>
     </div>
     <main>
@@ -48,7 +38,7 @@
                 <h1>Quem Somos</h1>
                 <p>F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias.<br><br>
                     Estamos preparados para te proporcionar todo o conforto necessário para que seja possível você focar na sua faculdade.<br><br>
-                    Esqueça todo aquele estresse de ter que gastar horas com mudança e burocracia; nossa empresa é especializada em optimizar o seu tempo na graduação.<br><br> Realizamos reformas e preparamos moradias para a sua recepção em um ambiente específico e otimizado para a vida de graduação.<br><br>
+                    Esqueça todo aquele estresse de ter que gastar horas com mudança e burocracia; nossa empresa é especializada em otimizar o seu tempo na graduação.<br><br> Realizamos reformas e preparamos moradias para a sua recepção em um ambiente específico para a vida de graduação.<br><br>
                     
                     <em>Preparado para essa nova experiência?</em>
                 </p>
@@ -56,11 +46,10 @@
         </div>
         <div class = "pagina pagina-dois" id="pagina-dois">
             <h1>Por que alugar com a F4life?</h1>
-
             <div class="pagina-dois-secoes">
                 <section>
                     <h2>Espaços individualizados ou em grupo</h2>
-                    <p>Aqui você pode optar por um quarto individualizado; ou em grupo para conseguir juntar aquela grana extra!</p>
+                    <p>Aqui você pode optar por um quarto individualizado (kitnet); ou uma moradia compartilhada para conseguir juntar aquela grana extra! Entre em contato agora e saiba os preços que temos para o seu perfil!</p>
                     <img src = 'assets/quartos.jpg' alt = "quartos">
                 </section>
                 <section>
@@ -100,7 +89,6 @@
         <div class="pagina pagina-quatro" id="pagina-quatro">
             <h1>Fale Conosco</h1>
             <p>Estamos abertos para receber qualquer tipo de dúvida.</p>
-
             <form>
                 <label for = "email"> Email </label>
                 <input type="text" id="email" class="email" placeholder="ex:fulano@email.com" required>
@@ -112,14 +100,14 @@
             </form>
         </div>
     </main>
-    <footer>
+    <footer id = "footer">
         <p>&copy; 2022 Todos os direitos reservados, F4life<br>
         <div class="redes">
             <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
             <a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a>
             <a href="https://www.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href= "https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
         </div>
-        
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="arquivo.js"></script>
